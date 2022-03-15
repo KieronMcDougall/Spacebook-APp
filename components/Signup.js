@@ -6,7 +6,7 @@ class Signup extends Component{
 	render(){
 		return (
 			<View>
-				<Text> SignUp Page</Text>
+				<Text> SignPage</Text>
 				
 			</View>
 		);
