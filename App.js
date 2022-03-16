@@ -1,9 +1,10 @@
 import 'react-native-gesture-handler';
 import { StatusBar } from 'expo-status-bar';
 import React, {Component} from 'react';
-import { StyleSheet, Text, View, Image, Button, FlatList } from 'react-native';
+import { StyleSheet, Text, View, Image, Button, FlatList, TextInput} from 'react-native';
 import {NavigationContainer} from '@react-navigation/native';
 import {createDrawerNavigator} from '@react-navigation/drawer';
+import AsyncStorage from '@react-native-async-storage/async-storage';
 
 
 import Home from './components/Home';
@@ -25,8 +26,9 @@ class App extends Component {
 				<NavigationContainer>
 					<Drawer.Navigator initialRouteName="Home">
 						<Drawer.Screen name="Home" component={Home} />
-						<Drawer.Screen name="Login" component={SignIn} />
-						<Drawer.Screen name="Signup" component={Signup} />
+						<Drawer.Screen name="Profile" component={Profile} />
+						<Drawer.Screen name="Search" component={Search} />
+						<Drawer.Screen name="SignUp" component={Signup} />
 					</Drawer.Navigator>
                 
 				</NavigationContainer>
