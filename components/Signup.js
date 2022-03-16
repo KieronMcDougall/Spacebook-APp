@@ -19,7 +19,8 @@ class Signup extends Component{
 			email: "",
 			password: ""
 		}
-	} // Initialises the state into which the users account details are stored. This is then passed to the api through the signup method.
+	} /* Initialises the state into which the users account details are stored. 
+		This is then passed to the api through the signup method.*/
 	
 	signup = () => {
         //Validation here...
@@ -58,8 +59,9 @@ class Signup extends Component{
                     placeholder="Enter your first name..."
                     onChangeText={(first_name) => this.setState({first_name})}
                     value={this.state.first_name}
-                    style={{padding:5, borderWidth:1, margin:5}}
-                /> // Takes input for first name and stores it within the first_name field in setState function.
+					style={{padding:5, borderWidth:1, margin:5}}
+                    
+                /> /* Takes input for first name and stores it within the first_name field in setState function.*/
 				<TextInput
                     placeholder="Enter your last name..."
                     onChangeText={(last_name) => this.setState({last_name})}

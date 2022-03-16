@@ -13,7 +13,7 @@ import Profile from './components/Profile';
 import Search from './components/Search';
 import SignIn from './components/SignIn';
 import Settings from './components/Settings';
-import Signup from './components/Signup';
+import SignUp from './components/Signup';
 
 
 const Drawer = createDrawerNavigator();
@@ -21,14 +21,14 @@ const Drawer = createDrawerNavigator();
 
 class App extends Component {
 		render(){
-			<Text> "Will this work"</Text>
 			return (
 				<NavigationContainer>
 					<Drawer.Navigator initialRouteName="Home">
 						<Drawer.Screen name="Home" component={Home} />
 						<Drawer.Screen name="Profile" component={Profile} />
 						<Drawer.Screen name="Search" component={Search} />
-						<Drawer.Screen name="SignUp" component={Signup} />
+						<Drawer.Screen name="SignUp" component={SignUp} />
+						<Drawer.Screen name= "Sign In" component = {SignIn} />
 					</Drawer.Navigator>
                 
 				</NavigationContainer>
