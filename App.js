@@ -7,14 +7,15 @@ import {createDrawerNavigator} from '@react-navigation/drawer';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 
 
-import Home from './components/Home';
-import HomeIn from './components/HomeIn';
+import Home from "./components/Home";
+import HomeIn from "./components/HomeIn";
 import Profile from './components/Profile';
 import Search from './components/Search';
 import SignIn from './components/SignIn';
 import Settings from './components/Settings';
 import SignUp from './components/Signup';
 import SignOut from './components/LogOut';
+
 
 
 const Drawer = createDrawerNavigator();

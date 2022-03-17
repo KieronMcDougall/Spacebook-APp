@@ -10,7 +10,8 @@ class Home extends Component{
 	render(){
 		return (
 			<View>
-				<Text> Home Page</Text>
+				<Text> This is the homepage. I had intended to use this page to display posts
+				from a users friends.</Text>
 				
 			</View>
 		);
