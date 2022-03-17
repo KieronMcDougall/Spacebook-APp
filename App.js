@@ -14,6 +14,7 @@ import Search from './components/Search';
 import SignIn from './components/SignIn';
 import Settings from './components/Settings';
 import SignUp from './components/Signup';
+import SignOut from './components/LogOut';
 
 
 const Drawer = createDrawerNavigator();
@@ -29,6 +30,7 @@ class App extends Component {
 						<Drawer.Screen name="Search" component={Search} />
 						<Drawer.Screen name="SignUp" component={SignUp} />
 						<Drawer.Screen name= "Sign In" component = {SignIn} />
+						<Drawer.Screen name="Sign out" component = {SignOut}/>
 					</Drawer.Navigator>
                 
 				</NavigationContainer>
